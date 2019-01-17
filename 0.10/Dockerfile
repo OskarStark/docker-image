@@ -4,7 +4,7 @@ MAINTAINER Tommy Muehle <tommy.muehle@gmail.com>
 ENV COMPOSER_HOME /composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH /composer/vendor/bin:$PATH
-ENV PHPSTAN_VERSION 0.10.x
+ENV PHPSTAN_VERSION 0.11.x
 
 COPY --from=composer:1.8.0 /usr/bin/composer /usr/local/bin/composer
 
